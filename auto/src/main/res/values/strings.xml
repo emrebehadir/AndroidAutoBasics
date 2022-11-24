@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="auto_service_hello">Hello</string>
+    <string name="auto_service_shop">Shop</string>
+</resources>

@@ -5,14 +5,14 @@ plugins {
 
 android {
     namespace 'com.emrebehadir.androidautobasics'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.emrebehadir.androidautobasics"
         minSdk 26
-        targetSdk 32
-        versionCode 1
-        versionName "1.0"
+        targetSdk 33
+        versionCode 3
+        versionName "1.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -39,4 +39,5 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
 }

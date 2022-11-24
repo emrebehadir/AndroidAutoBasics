@@ -1,4 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+
+        <meta-data
+            android:name="androidx.car.app.minCarApiLevel"
+            android:value="1" />
+
+        <meta-data
+            android:name="com.google.android.gms.car.application"
+            android:resource="@xml/automotive_app_desc" />
+
+        <service
+            android:name=".HelloService"
+            android:label="@string/auto_service_hello"
+            android:icon="@drawable/ic_hello"
+            android:roundIcon="@drawable/ic_hello"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="androidx.car.app.CarAppService" />
+                <category android:name="androidx.car.app.category.POI" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".ShopService"
+            android:label="@string/auto_service_shop"
+            android:icon="@drawable/ic_shop"
+            android:roundIcon="@drawable/ic_shop"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="androidx.car.app.CarAppService" />
+                <category android:name="androidx.car.app.category.POI" />
+            </intent-filter>
+        </service>
+
+    </application>
 
 </manifest>
